@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script language="Javascript" type="text/javascript">
+		//Kas Slis Pizza calculator
+
+		//prijzen van de pizzas small, medium en large.
+		const vijf = parseInt(5);
+		const zeven = parseInt(7);
+		const negen = parseInt(9);
+
+		//vraagt het aantal small pizzas en rekent de prijs uit en laat het op het scherm zien
+		var smallaantal = prompt("Hoeveel small pizzas wilt u bestellen?");
+		var pizzaprijssmall = (vijf*smallaantal);
+			document.write("Aantal small pizzas: " + (smallaantal) + " Prijs :€ " + (pizzaprijssmall) + "<br/>");
+
+		//vraagt het aantal medium pizzas en rekent de prijs uit en laat het op het scherm zien
+		var mediumaantal = prompt("Hoeveel medium pizzas wilt u bestellen?");
+		var pizzaprijsmedium = (zeven*mediumaantal);
+			document.write("Aantal medium pizzas: " + (mediumaantal) + " Prijs :€ " + (pizzaprijsmedium) + "<br/>");
+
+		//vraagt het aantal large pizzas en rekent de prijs uit en laat het op het scherm zien
+		var largeaantal = prompt("Hoeveel large pizzas wilt u bestellen?");
+		var pizzaprijslarge = (negen*largeaantal);		
+			document.write("Aantal large pizzas: " + (largeaantal) + " Prijs :€ " + (pizzaprijslarge) + "<br/>");
+
+		//Rekent de totaal prijs en laat het op het scherm zien.
+		var totaalprijs = pizzaprijssmall + pizzaprijsmedium + pizzaprijslarge;
+			document.write("Totaal prijs :€ " + (totaalprijs) + "<br/>");
+</script>
+</body>
+</html>
